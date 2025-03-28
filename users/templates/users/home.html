@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+
+    <style>
+
+body {
+    background-image:url('https://media.citizen.co.za/wp-content/uploads/2023/05/Julius-Malema-US-Souh-Africa-Russia-1536x1024.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+
+    color: white;
+    size: 100cm;
+    font-weight: bold;
+    font-size: 50px;
+
+
+}
+h3{
+    color:#080707;
+    font-family:cursive ;
+    text-align: center;
+}
+h2{
+color: #080707;
+font-family:cursive;
+}
+h4{
+color: #080707;
+font-family:cursive;
+}
+
+a{
+    color: white;
+    size: 100cm;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    size: 100cm;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  nav li {
+    margin: 0 1rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+
+  }
+  nav a:hover {
+    color: black;
+  }
+
+
+    </style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Julius Malema</h1><br>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'malema:biography' %}">Biography</a></li>
+                    <li><a href="http://127.0.0.1:8000/blog/">Blog</a> </li>
+                    <li><a href="{% url 'users:login' %}">logout</a></li>
+
+
+
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="bottom-text">
+        “We are heading to darkness”
+                           <p>—Julius Malema</p>
+        </div>
+    </div>
+    </body>
+</html>
