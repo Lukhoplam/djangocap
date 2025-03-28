@@ -15,8 +15,19 @@ def life_and_education(request):
 
 @login_required(login_url='')
 def anc_youth(request):
-    return render(request, 'anc_youth.html')
+    """
+    View function that renders the 'anc_youth.html' template.
 
+    This view is protected by login authentication. If the user is not logged in,
+    they will be redirected to the specified login URL.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered 'anc_youth.html' template as an HTTP response.
+    """
+    return render(request, 'anc_youth.html')
 
 
 
