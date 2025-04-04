@@ -5,7 +5,7 @@ This is a Django-based capstone project. The repository contains the necessary f
 To install and run this project on your local machine, follow the instructions below.
 
 1. **Clone the Repository**:
-   git clone https://github.com/your-username/djangocapstone.git
+   git clone [repo]
    cd djangocapstone
 2. **You need to install the dependencies listed in the requirements.txt file**:
   pip install -r requirements.txt
